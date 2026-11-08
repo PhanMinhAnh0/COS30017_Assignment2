@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="40dp">
+
+        <ImageButton
+            android:id="@+id/ibFBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|start"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/icon_back"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Favorite"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcFavList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:clipToPadding="false" />
+
+        <TextView
+            android:id="@+id/tvNoFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Favorite Cars"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>

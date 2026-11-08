@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/ivFavIMG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/ibRemFav"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/ic_fav_bg"
+        android:src="@drawable/ic_fav"
+        android:contentDescription="Remove Favorite"/>
+
+</FrameLayout>

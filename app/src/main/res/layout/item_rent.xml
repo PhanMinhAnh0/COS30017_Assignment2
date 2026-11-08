@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgRentImg"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvYRDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"/>
+
+    <Button
+        android:id="@+id/btnYRCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Rent"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

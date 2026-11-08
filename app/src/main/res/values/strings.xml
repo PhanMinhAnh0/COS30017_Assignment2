@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Car_Rent</string>
+    <string-array name="car_rate">
+        <item>Rating</item>
+        <item>Newest</item>
+        <item>Lowest Cost</item>
+    </string-array>
+</resources>
